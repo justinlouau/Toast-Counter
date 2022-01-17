@@ -37,17 +37,18 @@ public class FirstFragment extends Fragment {
         view.findViewById(R.id.random_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int currentCount = Integer.parseInt(showCountTextView.getText().toString());
+                //int currentCount = Integer.parseInt(showCountTextView.getText().toString());
 
-                NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                //NavHostFragment.findNavController(FirstFragment.this)
+                //        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                showCountTextView.setText("0");
             }
         });
 
         view.findViewById(R.id.toast_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast myToast = Toast.makeText(getActivity(), "Hello Toast!", Toast.LENGTH_LONG);
+                Toast myToast = Toast.makeText(getActivity(), "Toast!", Toast.LENGTH_LONG);
                 myToast.show();
             }
         });
