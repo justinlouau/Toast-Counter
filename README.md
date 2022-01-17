@@ -1,3 +1,3 @@
 # Toast Counter
 
-Learning Mobile Development using Android and Java development
+Learning Mobile Development for Android with Java
